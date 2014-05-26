@@ -1,0 +1,45 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: #2c3e50 no-repeat center center;
+    background-size: contain;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    white-space: nowrap;
+    width: auto;
+    color: #c0392b;
+    font-family: 'Lobster', cursive;
+}
+
+h1 {
+    font-size: 3.2em;
+}
+
+h2 {
+    font-size: 2.6em;
+}
+
+.info {
+    padding: 0.5% 2%;
+    display: inline-block;
+    background-color: rgba(0,0,0,0.64);
+}
+
+#title {
+    margin: 2%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#tag {
+    margin: 2%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
