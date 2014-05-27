@@ -1,6 +1,6 @@
 var roegfest = {
     clientID: '0d3ab0f612d1463ba64e094d7f0f5b46',
-    tag: 'roegfest2014',
+    tag: 'maxsus100',
     instagramAPI: 'https://api.instagram.com/v1/',
     imageContainer: $('#image'),
 
