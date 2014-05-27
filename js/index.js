@@ -4,21 +4,27 @@ var roegfest = {
     instagramAPI: 'https://api.instagram.com/v1/',
 
     init: function() {
-        var timeoutID = window.setTimeout(this.update(), 5000);
+        this.update();
+        window.setInterval(function() {
+            roegfest.update();
+        }, 5000);
     },
 
     update: function() {
+        NProgress.start();
         var url = this.instagramAPI + 'tags/' + this.tag
             + '/media/recent?client_id=' + this.clientID;
 
         var onSuccess = function(resp) {
             console.log(resp);
             var newestURL = resp.data[0].images.standard_resolution.url;
-            $('body').css('background-image', 'url(' + newestURL + ')');
+            $('#image').css('background-image', 'url(' + newestURL + ')');
+            NProgress.done();
         };
 
         var onFail = function(resp) {
             console.log('Failed to load data');
+            NProgress.done();
         };
 
         $.ajax({
