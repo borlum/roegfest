@@ -10,9 +10,10 @@ body {
 }
 
 h1, h2 {
+    line-height: 1;
     white-space: nowrap;
     width: auto;
-    color: #c0392b;
+    color: #27ae60;
     font-family: 'Lobster', cursive;
 }
 
